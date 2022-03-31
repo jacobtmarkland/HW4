@@ -43,11 +43,11 @@ function validInput(input){
         window.location.replace("../documents/index.html");
 
     }
-    let validSet = ['0','1'];
-    let good = true;
-    if(input.length > 16){
+    else if(input === ""){
         return false;
     }
+    let validSet = ['0','1'];
+    let good = true;
     for(let i = 0; i < input.length; i++){
         let setGood = false;
         for(let j = 0; j < validSet.length; j++){

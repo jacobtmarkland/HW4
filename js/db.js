@@ -70,13 +70,12 @@ function validInput(input){
     if(input.toLowerCase() === "back"){
         alert();
         window.location.replace("../documents/index.html");
-
+    }
+    else if(input === ""){
+        return false;
     }
     let validSet = ['0','1','2','3','4','5','6','7','8','9'];
     let good = true;
-    if(input > 65535){
-        return false;
-    }
     for(let i = 0; i < input.length; i++){
         let setGood = false;
         for(let j = 0; j < validSet.length; j++){
